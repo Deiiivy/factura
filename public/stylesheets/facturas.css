@@ -1,0 +1,43 @@
+
+h1 {
+  color: #333;
+}
+
+.content {
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 40px;
+  
+  box-shadow: 0 3px 4px 3px rgb(41, 39, 39);
+}
+
+.container_title {
+  color: #007bff;
+}
+
+p {
+  font-size: 16px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btnFactura {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnFactura:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    block css 
+  body
+  header 
+   div(class="container header_items")
+    div
+      h2(class='header_title') Bienvenido
+      p(class="header_paragraph") Consulte y pague sus facturas de servicios
+    nav(class="nav")
+      ul(class="nav_list")
+        li(class="link")
+          a(href='/') Inicio
+        li(class="link")
+          a(href='/clientes') Clientes
+        li(class="link")
+          a(href='/facturas') Facturas
+
+  block content
+
+  div(class="container")
+    block container
+

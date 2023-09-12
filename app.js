@@ -9,6 +9,21 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+const sequelize = require('./database/connection.js')
+
+// test connect database
+const tryConnect = async ()=> {
+  try {
+    await sequelize.authenticate()
+    console.log('Connection successful!')
+  }
+  catch (error) {
+    console.log('Error in the connection', error)
+  }
+}
+
+tryConnect()
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
